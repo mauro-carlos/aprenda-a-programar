@@ -1,4 +1,4 @@
-let numero =7
+let numero =1500450271
 let divisor
 divisor=2
 while (numero%divisor !=0){
