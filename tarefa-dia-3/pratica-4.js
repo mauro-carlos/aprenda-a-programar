@@ -5,9 +5,9 @@ while (numero%divisor !=0){
     divisor++
 }
 if (divisor==numero){
-    console.log(`o numero ${numero} É Primo`)
+    console.log(` SIM o numero ${numero} É Primo`)
 }
   else {
-    console.log(`o numero ${numero} NÃO É Primo`)
+    console.log(`NÂO o numero ${numero} NÃO É Primo`)
   }
 
