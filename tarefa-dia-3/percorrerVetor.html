@@ -1,0 +1,37 @@
+<meta charset="UTF-8">
+<script>
+	/*
+	Rodrigo
+	  Nota : 10, 10 e 10
+	  Curso : Informatica	
+
+	*/
+	
+	let cadastro = [
+
+		           {Nome: "Rodrigo",Nota:[10,10,10],Curso: "Informática"},		
+                   {Nome: "Pedro",Nota:[9,8,8],Curso: "Historia"},
+                   {Nome: "Maria",Nota: [10,9,5],Curso: "Informática"},	
+	];
+let i = 0;
+let j = 0;
+let texto ="";
+while (i < cadastro.length) {
+j=0;
+texto = "";      
+    while(j < (cadastro[i].Nota.length)) {
+    texto  = texto + (cadastro[i].Nota[j] + ",");
+    j++;   
+    
+    }
+    
+	console.log(cadastro[i].Nome);
+    console.log(cadastro[i].Curso);
+    console.log("Nota : " + texto);
+    
+   
+    i++;
+	
+}
+
+</script>

@@ -9,9 +9,9 @@
 	
 	let cadastro = [
 
-		           {Nome: "Rodrigo",Nota: 10,Curso: "Informática"},		
-                   {Nome: "Pedro",Nota: 9,Curso: "Historia"},
-                   {Nome: "Maria",Nota: 10,Curso: "Informática"},	
+		           {Nome: "Rodrigo",Nota:[10,10,10],Curso: "Informática"},		
+                   {Nome: "Pedro",Nota:[9,8,8],Curso: "Historia"},
+                   {Nome: "Maria",Nota: [10,9,5],Curso: "Informática"},	
 	];
 	
 	let nome1 = cadastro[0].Nome;
@@ -30,5 +30,16 @@
      alert("O primeiro dado é  Curso1  e é " + cadastro[0].Curso);
 	alert("O segundo dado é Curso2 e  é " + cadastro[1].Curso);
 	alert("O terceiro dado é Curso3 e  é " + cadastro[2].Curso);
+
+	let i=0;
+	let j=0;
+	let l=0;
+	while (i < cadastro.length) {
+		console.log("O primeiro dado é  Nome  e é usando percorre automatico " + cadastro[i].Nome);
+		console.log("O primeiro dado é  Nome  e é usando percorre automatico " + cadastro[i].Nota);
+		console.log("O primeiro dado é  Nome  e é usando percorre automatico " + cadastro[i].Curso);
+		i++;
+	}
+	
 	
 </script>
