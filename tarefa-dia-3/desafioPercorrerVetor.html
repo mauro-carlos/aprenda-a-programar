@@ -58,14 +58,24 @@ console.log("FOR IN----------------------------")
 for (i in cadastro) {
 console.log("Nome : " + cadastro[i].Nome);
 console.log("Curso : " + cadastro[i].Curso);
-console.log("Nota :  " + cadastro[i].Nota[0] + "," + cadastro[i].Nota[1] + "," + cadastro[i].Nota[2]);
+let notas = "";
+for  ( j in cadastro[i].Nota) {
+notas += cadastro[i].Nota[j] + ",";
+}
+console.log("Notas :" + notas);
 
 }
+
 console.log(" ");
 console.log("FOR OF ----------------------------------");
 for (elemento of cadastro) {
 console.log("Nome : " + elemento.Nome);
 console.log("Curso : " + elemento.Curso);
-console.log("Nota :  " + elemento.Nota[0] + "," + elemento.Nota[1] + "," + elemento.Nota[2]);
+let notas = "";
+for ( nota of elemento.Nota){
+	notas += nota + ",";
 }
+console.log("Notas :" + notas);
+}
+
 </script>
