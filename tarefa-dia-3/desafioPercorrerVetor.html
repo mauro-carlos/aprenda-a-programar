@@ -22,7 +22,9 @@ while (i < cadastro.length) {
 j=0;
 texto = "";      
     while(j < (cadastro[i].Nota.length)) {
-    texto  = texto + " " + (cadastro[i].Nota[j] + ",") ;
+    texto  = texto  + (cadastro[i].Nota[j]) ;
+    if (j + 1 < cadastro[i].Nota.length )
+    	texto += ",";
     j++;   
     
     }
@@ -41,9 +43,16 @@ console.log("FOR LET I-------------------------------")
 for(let i = 0; i < cadastro.length;i++) {
 console.log("Nome : " + cadastro[i].Nome);
 console.log("Curso : " + cadastro[i].Curso);
-console.log("Nota :  " + cadastro[i].Nota[0] + "," + cadastro[i].Nota[1] + "," + cadastro[i].Nota[2]);
-}
+let notas = "";
+for (let j = 0; j < cadastro[i].Nota.length; j++){
+	notas += cadastro[i].Nota[j];
+	if (j + 1 < cadastro[i].Nota.length)
+	notas = notas + ",";
 
+}
+console.log("Notas : " + notas);
+
+}
 console.log(" ");
 console.log("FOR IN----------------------------")
 for (i in cadastro) {

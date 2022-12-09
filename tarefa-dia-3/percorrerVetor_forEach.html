@@ -1,0 +1,48 @@
+<meta charset="UTF-8">
+<script>
+	/*
+	Rodrigo
+	  Nota : 10, 10 e 10
+	  Curso : Informatica	
+
+	*/
+
+let exibe = elemento => {
+console.log("Nome : " + elemento.Nome);
+console.log("Curso : " + elemento.Curso);
+console.log("Nota :  " + elemento.Nota[0] + "," + elemento.Nota[1] + "," + elemento.Nota[2]);
+}
+	
+	let cadastro = [
+
+		           {Nome: "Rodrigo",Nota:[10,10,10],Curso: "Informática"},		
+                   {Nome: "Pedro",Nota:[9,8,8,10],Curso: "Historia"},
+                   {Nome: "Maria",Nota: [10,9,5],Curso: "Informática"},	
+	];
+
+let i = 0;
+let j;
+let texto ="";
+console.log("WHILE-------------------------------")
+while (i < cadastro.length) {
+j=0;
+texto = "";      
+    while(j < (cadastro[i].Nota.length)) {
+    texto  = texto + " " + (cadastro[i].Nota[j] + ",") ;
+    j++;   
+    
+    }
+    
+	console.log("Nome : " + cadastro[i].Nome);
+    console.log("Curso : " + cadastro[i].Curso);
+    console.log("Nota :  " + texto);
+    
+   
+    i++;
+	 
+}
+
+console.log("");
+console.log("forEach -------------------------------")
+cadastro.forEach(exibe);
+</script>
