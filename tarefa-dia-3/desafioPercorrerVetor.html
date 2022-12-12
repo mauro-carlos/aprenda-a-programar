@@ -62,6 +62,7 @@ let notas = "";
 for  ( j in cadastro[i].Nota) {
 notas += cadastro[i].Nota[j] + ",";
 }
+notas = notas.substring(0,notas.length-1);
 console.log("Notas :" + notas);
 
 }
@@ -75,7 +76,21 @@ let notas = "";
 for ( nota of elemento.Nota){
 	notas += nota + ",";
 }
+notas = notas.substring(0,notas.length-1);
 console.log("Notas :" + notas);
 }
+console.log("");
+console.log("For Each ------------------------");
+
+let juntaNotas = elemento => notas += elemento + ",";
+
+let exibe = elemento => {
+console.log("Nome : " + elemento.Nome);
+console.log("Curso : " + elemento.Curso);
+notas = "";
+elemento.Nota.forEach(juntaNotas);
+console.log("Notas : " + notas);
+}
+cadastro.forEach(exibe);
 
 </script>
