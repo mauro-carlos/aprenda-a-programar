@@ -8,7 +8,7 @@
 </head>
 <body>
 <script>
-    
+   
     let a = [[110,120],[21,22],[31,32],[41,42]];
     for (let i = 0;i < a.length;i++){
     for (let j = 0;j < a[i].length;j++) {             
@@ -41,6 +41,27 @@
 	 
 }
 */
+console.log("")
+console.log("FOR OF =========================");
+
+a = [[110,120],[21,22],[31,32],[41,42]];
+    for (item of a)
+        for (intemInterno of item)
+            console.log(intemInterno);
+
+   console.log("");
+   console.log("FOR IN =======================");
+   a = [[110,120],[21,22],[31,32],[41,42]];
+    for (i  in  a)
+    for (j of a[i])
+    console.log(`Na posição ${i},${j} valor = ${a[i][j]}`);
+    //for (intemInterno of item)
+      //      console.log(intemInterno);
+  
+        
+   
+            
+
 </script>
 </body>
 </html>
